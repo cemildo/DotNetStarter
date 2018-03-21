@@ -35,6 +35,9 @@ namespace BigProject
              */
             services.AddTransient<IMailService, NullMailService>();
             services.AddTransient<BigProjectContextSeeder>();
+            // repositor implementations
+            // services.AddScoped<Interface, Implementation>();
+
             services.AddMvc();
         }
 
